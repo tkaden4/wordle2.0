@@ -2,7 +2,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   get: (searchParams, prop) => searchParams.get(prop),
 });
 
-const WORD_SIZE_PLUS_ONE = (+(params.n ?? 8) || 8) + 1;
+const WORD_SIZE_PLUS_ONE = (+(params.n ?? 7) || 7) + 1;
 
 (this.wordle = this.wordle || {}),
   (this.wordle.bundle = (function (e) {
